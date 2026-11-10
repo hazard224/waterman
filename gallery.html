@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gallery &amp; Events | Waterman Center for the Arts</title>
+<meta name="description" content="Gallery shows, openings and community events at the Waterman Center for the Arts.">
+<link rel="icon" href="images/waterman-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="gallery">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+  <div class="strip" aria-hidden="true"><i style="background:var(--periwinkle);flex-grow:1"></i><i style="background:var(--green);flex-grow:1.4"></i><i style="background:var(--rust);flex-grow:.8"></i><i style="background:var(--purple);flex-grow:2.2"></i><i style="background:var(--cobalt);flex-grow:2"></i><i style="background:var(--magenta);flex-grow:1.6"></i><i style="background:var(--chartreuse);flex-grow:.8"></i><i style="background:var(--charcoal);flex-grow:.6"></i></div>
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><picture><source media="(prefers-color-scheme: dark)" srcset="images/waterman-horizontal-reversed.png"><img src="images/waterman-horizontal.png" alt="Waterman Center for the Arts, home" width="726" height="162"></picture></a>
+    <nav class="main" id="nav" aria-label="Main">
+      <ul>
+        <li><a href="classes.html">Classes</a></li>
+                <li><a href="gallery.html" aria-current="page">Gallery &amp; Events</a></li>
+        <li><a href="visit.html">Visit</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <div class="actions">
+      <button class="search-btn" type="button" aria-label="Search" aria-expanded="false" aria-controls="search-panel"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></button>
+      <a class="btn btn-give" href="support.html">Support<span class="long">&nbsp;the Waterman</span></a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    </div>
+  </div>
+  <div class="search-panel" id="search-panel" hidden>
+    <div class="wrap">
+      <form class="search-form" role="search" onsubmit="return false">
+        <label for="q" class="sr">Search the site</label>
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>
+        <input id="q" type="search" placeholder="Search classes, events, the Call for Artists…" autocomplete="off">
+        <button type="button" class="search-close">Close</button>
+      </form>
+      <p class="search-hint" id="search-status" aria-live="polite">Try “clay”, “kids”, “open house” or “hours”.</p>
+      <ul class="search-results" id="search-results"></ul>
+    </div>
+  </div>
+</header>
+
+<main id="main" style="--accent:var(--section-gallery)">
+
+  <div class="wrap">
+    <div class="pagehead"><div><h1>Gallery &amp; Events</h1><p class="lede prose">Gallery shows by artists from Bath, Western Steuben County and the Finger Lakes, plus openings, open studios and community days.</p></div></div>
+    <div class="secbar" style="--bar:var(--purple)"><span>Now showing</span></div>
+    <h2>On view now</h2>
+    <div class="feature" style="margin-bottom:56px">
+      <div class="media"><img src="images/exhibition-sample.jpg" alt=""><span class="tag on-image sample">Sample image</span></div>
+      <div class="t">
+        <p class="when">November 13, 2026 to January 9, 2027</p>
+        <h3>New Work from Steuben County</h3>
+        <p>A juried show of painting, clay, fiber and photography by regional artists.</p>
+      </div>
+    </div>
+    <div class="split">
+      <section aria-labelledby="h-events">
+        <h2 id="h-events">Upcoming events</h2>
+        <div id="event-list"></div>
+      </section>
+      <section aria-labelledby="h-next">
+        <h2 id="h-next">Coming up in the gallery</h2>
+        <div class="exgrid" style="grid-template-columns:1fr">
+          <article class="ex"><div class="media"><img src="images/winter-light-sample.jpg" alt=""><span class="tag on-image sample">Sample image</span></div><h3>Winter Light</h3><p>January 15 to March 5, 2027. Photography of the Finger Lakes in the cold months.</p></article>
+        </div>
+        <div class="aside" style="margin-top:24px">
+          <h3>Call for artists</h3>
+          <p class="small">Show your work at the Open House exhibition in our new home.</p>
+          <a href="call-for-artists.html">See how to apply</a>
+        </div>
+      </section>
+    </div>
+    <section class="band alt" aria-labelledby="h-past">
+      <div class="secbar" style="--bar:var(--purple)"><span>Archive</span></div>
+      <h2 id="h-past">Past exhibitions</h2>
+      <div class="past"><b>2026</b><ul><li>Hard Hat Studio, summer</li><li>Call and Response, spring</li></ul></div>
+      <div class="past"><b>2025</b><ul><li>Pop-Up on Liberty Street, fall</li><li>Steuben Makers, summer</li><li>Small Works, spring</li></ul></div>
+      <div class="past" style="border-bottom:1px solid var(--line)"><b>2024</b><ul><li>Community Arts Festival, summer</li></ul></div>
+    </section>
+    <section class="band" aria-labelledby="h-bath">
+      <div class="secbar" style="--bar:var(--purple)"><span>Spotlight</span></div>
+      <div class="split">
+        <div class="prose">
+          <h2 id="h-bath">Bath artists</h2>
+          <p>A running spotlight on artists with roots in Bath, starting with Haverling alumni. Send us a short biography of your adventures in the arts.</p>
+          <a href="mailto:Gureckipatty4@gmail.com?subject=Bath%20artists%20spotlight">Send your biography</a>
+        </div>
+        <ul class="plain">
+          <li><a href="http://watermancenterforthearts.org/wp-content/uploads/2025/08/sallyconleybio.pdf">Sarah Conley</a><small>Haverling class of 1963</small></li>
+          <li><a href="http://watermancenterforthearts.org/wp-content/uploads/2019/11/ART-BIO-PAMELA-TANGER.pdf">Pamela R. Tanger</a><small>Haverling class of 1969</small></li>
+          <li><a href="http://watermancenterforthearts.org/wp-content/uploads/2019/11/ART-BIO-PATTY-RICE-GURECKI.pdf">Patty Rice Gurecki</a><small>Haverling class of 1974</small></li>
+          <li><a href="http://watermancenterforthearts.org/wp-content/uploads/2021/04/Beva-Chissom-Meagher-Bio.pdf">Beva Chissom (Meagher)</a><small>Haverling class of 1975</small></li>
+        </ul>
+      </div>
+    </section>
+    <div class="note" style="margin:56px 0 0"><p><strong>Sample exhibitions and events.</strong> Titles and dates are placeholders.</p></div>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap cols">
+    <div>
+      <h2>Waterman Center for the Arts</h2>
+      <address class="address">Liberty Street<br>PO Box 83<br>Bath, NY 14810</address>
+      <p style="margin-top:12px"><a href="mailto:Gureckipatty4@gmail.com">Gureckipatty4@gmail.com</a></p>
+    </div>
+    <div><h2>Visit</h2><ul><li><a href="classes.html">Classes</a></li><li><a href="gallery.html">Gallery &amp; Events</a></li><li><a href="visit.html">Hours and directions</a></li></ul></div>
+    <div><h2>Get involved</h2><ul><li><a href="support.html">Support the Waterman</a></li><li><a href="support.html">Become a member</a></li><li><a href="call-for-artists.html">Call for Artists</a></li><li><a href="about.html#artists">For artists</a></li><li><a href="mailto:Gureckipatty4@gmail.com?subject=Add%20me%20to%20the%20Waterman%20email%20list">Email list</a></li></ul></div>
+    <div><h2>About</h2><ul><li><a href="about.html">Mission and board</a></li><li><a href="about.html#archive">Newsletter archive</a></li><li><a href="https://www.facebook.com/Save-the-LyonWaterman-Arts-Centre-255242411162352/">Facebook</a></li></ul></div>
+  </div>
+  <div class="wrap legal">A project of the Save the Lyon Commission, Inc., a 501(c)(3) not-for-profit organization.</div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/search-index.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

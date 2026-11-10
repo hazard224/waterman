@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Support the Waterman | Waterman Center for the Arts</title>
+<meta name="description" content="Support the Waterman Center for the Arts with a gift or membership.">
+<link rel="icon" href="images/waterman-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="donate">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+  <div class="strip" aria-hidden="true"><i style="background:var(--periwinkle);flex-grow:1"></i><i style="background:var(--green);flex-grow:1.4"></i><i style="background:var(--rust);flex-grow:.8"></i><i style="background:var(--purple);flex-grow:2.2"></i><i style="background:var(--cobalt);flex-grow:2"></i><i style="background:var(--magenta);flex-grow:1.6"></i><i style="background:var(--chartreuse);flex-grow:.8"></i><i style="background:var(--charcoal);flex-grow:.6"></i></div>
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><picture><source media="(prefers-color-scheme: dark)" srcset="images/waterman-horizontal-reversed.png"><img src="images/waterman-horizontal.png" alt="Waterman Center for the Arts, home" width="726" height="162"></picture></a>
+    <nav class="main" id="nav" aria-label="Main">
+      <ul>
+        <li><a href="classes.html">Classes</a></li>
+                <li><a href="gallery.html">Gallery &amp; Events</a></li>
+        <li><a href="visit.html">Visit</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <div class="actions">
+      <button class="search-btn" type="button" aria-label="Search" aria-expanded="false" aria-controls="search-panel"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></button>
+      <a class="btn btn-give" href="support.html">Support<span class="long">&nbsp;the Waterman</span></a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    </div>
+  </div>
+  <div class="search-panel" id="search-panel" hidden>
+    <div class="wrap">
+      <form class="search-form" role="search" onsubmit="return false">
+        <label for="q" class="sr">Search the site</label>
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>
+        <input id="q" type="search" placeholder="Search classes, events, the Call for Artists…" autocomplete="off">
+        <button type="button" class="search-close">Close</button>
+      </form>
+      <p class="search-hint" id="search-status" aria-live="polite">Try “clay”, “kids”, “open house” or “hours”.</p>
+      <ul class="search-results" id="search-results"></ul>
+    </div>
+  </div>
+</header>
+
+<main id="main" style="--accent:var(--section-give)">
+
+  <div class="wrap">
+    <div class="pagehead"><div><h1>Support the Waterman</h1><p class="lede prose">Gifts and memberships keep classes affordable, fund scholarships for kids and keep the gallery open.</p></div></div>
+    <div class="giveform">
+      <form id="giveform" novalidate>
+        <fieldset>
+          <legend>Your gift</legend>
+          <div class="seg" role="radiogroup" aria-label="How often">
+            <input type="radio" name="freq" id="fq-once" value="once" checked><label for="fq-once">One time</label>
+            <input type="radio" name="freq" id="fq-month" value="month"><label for="fq-month">Monthly</label>
+          </div>
+          <div class="levels">
+            <div class="lv"><input type="radio" name="amt" id="a25" value="25"><label for="a25"><b>$25</b><span>Art supplies for one class</span></label></div>
+            <div class="lv"><input type="radio" name="amt" id="a50" value="50" checked><label for="a50"><b>$50</b><span>A family workshop seat</span></label></div>
+            <div class="lv"><input type="radio" name="amt" id="a90" value="90"><label for="a90"><b>$90</b><span>Six weeks of art for one child</span></label></div>
+            <div class="lv"><input type="radio" name="amt" id="a250" value="250"><label for="a250"><b>$250</b><span>A semester scholarship</span></label></div>
+            <div class="lv"><input type="radio" name="amt" id="aother" value="other"><label for="aother"><b>Other</b><span>Any amount</span></label></div>
+          </div>
+          <div class="field" id="other-wrap" hidden style="margin-top:14px;max-width:220px">
+            <label for="other-amt">Amount in dollars</label>
+            <input id="other-amt" type="number" min="5" step="1" inputmode="numeric" aria-describedby="err-other">
+            <span class="err" id="err-other"></span>
+          </div>
+          <div class="check" style="margin-top:12px"><input type="checkbox" id="member"><label for="member">Make me a member (gifts of $50 and up)</label></div>
+          <div class="check"><input type="checkbox" id="tribute"><label for="tribute">Give in honor or in memory of someone</label></div>
+          <div class="field" id="tribute-wrap" hidden><label for="trib-name">Their name</label><input id="trib-name" autocomplete="off"></div>
+        </fieldset>
+        <fieldset>
+          <legend>Your information</legend>
+          <div class="row2">
+            <div class="field"><label for="fn">First name</label><input id="fn" autocomplete="given-name" aria-describedby="err-fn"><span class="err" id="err-fn"></span></div>
+            <div class="field"><label for="ln">Last name</label><input id="ln" autocomplete="family-name" aria-describedby="err-ln"><span class="err" id="err-ln"></span></div>
+          </div>
+          <div class="field"><label for="em">Email</label><input id="em" type="email" autocomplete="email" aria-describedby="err-em"><span class="err" id="err-em"></span></div>
+          <div class="check"><input type="checkbox" id="news" checked><label for="news">Email me about classes and exhibitions</label></div>
+        </fieldset>
+        <button class="btn btn-give" type="submit">Continue to payment</button>
+      </form>
+      <aside class="summary" aria-live="polite">
+        <p class="muted" style="margin:0 0 6px">Your gift</p>
+        <div class="amt" id="sum-amt">$50</div>
+        <p class="muted" id="sum-per">one time</p>
+        <p class="small muted" style="margin:0">Save the Lyon Commission, Inc. is a 501(c)(3) not-for-profit organization. Prefer to mail a check? PO Box 83, Bath, NY 14810.</p>
+      </aside>
+    </div>
+    <section class="band alt" aria-labelledby="h-thanks">
+      <div class="secbar" style="--bar:var(--rust)"><span>Our donors</span></div>
+      <h2 id="h-thanks">Thank you to our donors</h2>
+      <details>
+        <summary>2019 memorials, honorees and donors</summary>
+        <div class="cols">
+          <h4>Memorials</h4>
+          <p>Martha &amp; Doug Bigelow in memory of Chester Bush, Thelma Robbins Covert, Nellie Biehl Kinney, Kitty Ormsby, James Preston, Harold Robbins, and Peter Watson</p>
+          <p>Derwood “Guy” Burns in memory of Nancy Gunderman Burns, ’54</p>
+          <p>Pat Longwell Byers in memory of Bill Longwell</p>
+          <p>David Catherman in memory of Curt Hopkins</p>
+          <p>Robert J. Gallagher in memory of Coach John Northrup</p>
+          <p>Barb Nolte in memory of Everette and Shirley Colburn</p>
+          <p>Leigh Markham Peck in memory of our parents Theodore and Margaret Markham</p>
+          <p>Meg &amp; Jim Pietsch in memory of Wanda Pietsch Cohn</p>
+          <p>Olga Gerych Savino in memory of deceased classmates, 1949</p>
+          <p>James W. Shults in memory of Edith A. Shults</p>
+          <h4>In memory of William Townsend</h4>
+          <p>Dorothy Hobbs</p><p>Brenda Miller &amp; Deb Weaver</p><p>John &amp; Marcia Miller</p><p>Roy &amp; Carol Miller</p><p>Steve &amp; Donna Miller Shertzer</p><p>Ray &amp; Ferolyn Swain</p><p>Cheryl Williams</p>
+          <h4>Donors</h4>
+          <p>Bonnie and Dick Barney</p><p>Joe and Janet Baroody</p><p>Joe and Patty Baroody in honor of Rosalie Niemczyk</p><p>JoAnn and Bob Brundage in honor of the class of 1958 and in memory of deceased classmates</p><p>Marian Case</p><p>Wanda Conjorio</p><p>Therese M. Dudden</p><p>Moody Johnson</p><p>Ellie Jones</p><p>Lawrence Lam</p><p>Walt and Laurie Longwell</p><p>Gina Magennis</p><p>Hilda Milham</p><p>Pat and George Muller</p><p>Peter and Lorraine Nelson</p><p>Sue Nielsen Nickerson</p><p>Linda Pickering</p><p>Jim Pitt</p><p>Sandra Cochran Rake</p><p>Bob and Mary Ann Robinson in honor of the Robinson family</p><p>Julie Rock</p><p>Kathryn Rolfe in honor of the class of 1959 and our 60th reunion</p><p>Pat Fuller Seger</p><p>Leslie &amp; Janice Smith</p><p>Charlene Stewart</p><p>Cynthia Sutryk</p><p>Martha Treichler</p><p>Marjorie and George Walike in honor of the Walike Family</p>
+        </div>
+      </details>
+      <details>
+        <summary>Earlier memorials, honorees and donors</summary>
+        <div class="cols">
+          <h4>Memorials</h4>
+          <p>William S. Townsend for Ruth M. Brooks</p><p>Stephen Makitra, Jr (Sam) for Stephen Makitra, Sr.</p><p>William and Arlene Brundage for Grattan H. Brundage (Class of 1914)</p><p>Keith M. Dewey for L Flo Dewey</p><p>Ella Barkley for Ben Dorsey, Sr.</p><p>Ina Mae Wakefield for deceased graduates (Class of 1951)</p><p>James W. Shultz for Edith A. Shultz</p><p>Eleanor Erway for her father Vern Shattuck (former DLL school bus owner/operator)</p><p>Edna Friedland for David Friedland</p><p>Elwyn and Eleanor Erway for David Friedland</p><p>Charlene Stewart for Erma Wethey</p><p>JoAnn and Robert Brundage for Ernestine L. Biehl</p><p>Lucia J. Brown for Charles F. Brown</p><p>Dorothy and Jerry Hobbs for Gaile Kropp Jourden, William P. Jourden, Dean Kropp and John Kulikowski</p>
+          <h4>Honorees</h4>
+          <p>Laurene Grimes for Evelyn Matthews</p><p>Martha Treichler for “Save-the-Lyon Commission”</p><p>Richard and Loraine Tyler for Walter Longwell</p><p>Dorothy Ames Pomero for Freal Ames</p><p>Jerry and Dorothy Hobbs for Rosalie Niemczyk</p><p>Violet Castrilli for (Class of 1941)</p><p>Ray G. Gibson III for James &amp; Ray Gibson</p><p>Baroody Family for Joseph &amp; Janet Baroody</p>
+          <h4>Donors</h4>
+          <p>Walter Longwell</p><p>Norma Haskins</p><p>Helen Brink</p><p>Freal and June Ames</p><p>Norma J. Shugars</p><p>George and Marjorie Walike</p><p>Dawn DiDelia</p><p>Ray and Ferolyn Swain</p><p>Trula Thompson</p><p>Margaret Hogan</p><p>Ann H. Voght</p><p>Mr. and Mrs. Theodore Markham</p><p>Robert D. Greisa</p><p>Joseph &amp; Patricia Baroody</p><p>Jeanette N. Brown</p><p>Donald Long</p>
+        </div>
+      </details>
+    </section>
+    <div class="note" style="margin:56px 0 0"><p><strong>Demo form.</strong> Levels are samples and no payment is taken. On the live site this connects to a payment processor.</p></div>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap cols">
+    <div>
+      <h2>Waterman Center for the Arts</h2>
+      <address class="address">Liberty Street<br>PO Box 83<br>Bath, NY 14810</address>
+      <p style="margin-top:12px"><a href="mailto:Gureckipatty4@gmail.com">Gureckipatty4@gmail.com</a></p>
+    </div>
+    <div><h2>Visit</h2><ul><li><a href="classes.html">Classes</a></li><li><a href="gallery.html">Gallery &amp; Events</a></li><li><a href="visit.html">Hours and directions</a></li></ul></div>
+    <div><h2>Get involved</h2><ul><li><a href="support.html">Support the Waterman</a></li><li><a href="support.html">Become a member</a></li><li><a href="call-for-artists.html">Call for Artists</a></li><li><a href="about.html#artists">For artists</a></li><li><a href="mailto:Gureckipatty4@gmail.com?subject=Add%20me%20to%20the%20Waterman%20email%20list">Email list</a></li></ul></div>
+    <div><h2>About</h2><ul><li><a href="about.html">Mission and board</a></li><li><a href="about.html#archive">Newsletter archive</a></li><li><a href="https://www.facebook.com/Save-the-LyonWaterman-Arts-Centre-255242411162352/">Facebook</a></li></ul></div>
+  </div>
+  <div class="wrap legal">A project of the Save the Lyon Commission, Inc., a 501(c)(3) not-for-profit organization.</div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/search-index.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
